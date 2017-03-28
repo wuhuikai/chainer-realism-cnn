@@ -4,7 +4,7 @@ import argparse
 from scipy.io import loadmat
 
 def main():
-    parser = argparse.ArgumentParser(description='Turn image list in mat type into txt type.')
+    parser = argparse.ArgumentParser(description='Turn image list in mat type into plaint text file.')
     parser.add_argument('--data_root', default='/data1/wuhuikai/benchmark/Realistic/human_evaluation', help='Root folder for test dataset')
     parser.add_argument('--sub_dataset', default='lalonde_and_efros_dataset', help='Folder name for sub_dataset, including images subfolder, as well as image list')
     parser.add_argument('--mat_path', default='human_labels.mat', help='Path for mat file')

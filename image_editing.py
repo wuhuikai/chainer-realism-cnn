@@ -97,7 +97,7 @@ def main():
     serializers.load_npz(args.model_path, model)
     if args.gpu >= 0:
         chainer.cuda.get_device(args.gpu).use()  # Make a specified GPU current
-        model.to_gpu()                               # Copy the model to the GPU
+        model.to_gpu()                           # Copy the model to the GPU
     
     # Init image list
     im_root = os.path.join(args.data_root, args.img_folder)

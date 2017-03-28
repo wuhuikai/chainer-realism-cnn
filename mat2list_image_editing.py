@@ -4,7 +4,7 @@ import argparse
 from scipy.io import loadmat
 
 def main():
-    parser = argparse.ArgumentParser(description='Turn image list in mat type into txt type.')
+    parser = argparse.ArgumentParser(description='Turn image list in mat type into plaint text file.')
     parser.add_argument('--data_root', default='/data1/wuhuikai/benchmark/Realistic/color_adjustment', help='Root folder for image editing dataset')
     parser.add_argument('--mat_path', default='imageList.mat', help='Path for mat file')
     parser.add_argument('--list_name', default='list.txt', help='Name for file storing image list')
